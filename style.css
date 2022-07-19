@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@200&family=Oswald:wght@500&family=Poppins:wght@500&family=Roboto:wght@300&family=Supermercado+One&family=The+Nautigal:wght@700&family=Ubuntu&display=swap');
+
+body{
+ margin: 0%;
+ font-family: 'Oswald', sans-serif;
+}
+/* header */
+
+header{
+    
+    margin-bottom: 2%;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 120px;
+}
+.header h2{
+    font-size: 30px;
+}
+nav{
+    padding-left:40%;
+    padding-top: 2.5%; 
+}
+nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+    color: black;
+}
+/* responsive for header */
+
+
+@media screen and (max-width:688px) {
+    nav a{
+        float: none;
+        display: block;
+        text-align: right;
+        border: 1px solid black;
+        
+    }
+    .header{
+        border-bottom: 2px solid gray;
+    }
+    
+}
+
+/* 1st section  */
+.st-sec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 430px;
+    
+}
+.st-sec h1{
+    font-size: 43px;
+    margin-bottom: 30px;
+}
+.half-width{
+    width: 60%;
+    justify-content: center;
+    padding-left: 25%;
+    height: 430px;
+}
+.half-width img{
+    width: 100%;
+}
+.link-btn{
+    text-decoration:none;
+    border-radius:10px;
+    padding: 10px 20px;
+    background-image: linear-gradient(orange, tomato);
+}
+#img2{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:688px) {
+    .st-sec{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        height: 100%;
+        
+    }
+    .st-sec h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .half-width img{
+        width: 90%;
+    }
+    .half-width{
+        width:80%;
+        height:100%;
+        flex-direction: start;
+        padding-left:10%;
+    }
+    #img2{
+        padding-bottom: 50px;
+    }
+}
+
+hr{
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    margin: 2% 18%;
+}
+@media screen  and (max-width:688px){
+    hr{
+        display: none;
+    }
+    .logo{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    
+    }
+    .logo img{
+        height:60px;
+        width: 80px;
+    }
+
+}
+.logo{
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    gap: 40px;
+    margin: 0% 18%;
+}
+/* nd-sec */
+
+.nd-sec{
+    margin-top: 3%;
+    margin:4% 18%;
+}
+.nd-sec h1{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 30px;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    column-gap: 25px;
+}
+@media screen  and (max-width:688px){
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 25px;
+    }
+}
+.product-img{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+.product-img img{
+    width: 100%;
+}
+.star{
+    font-size: 13pxa;
+    color: gold;
+    font-size: 13px;
+    font-weight: 700;
+}
+#re-num{
+    color:brown;
+    font-weight: 700;
+    font-size: 16px;
+}
+.nd-sec a{
+     text-decoration: none;
+     font-weight: 700;
+     color:#E02C6D
+     ;
+}
+#see-more{
+   
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: end;
+}
+/* forth sec */
+
+.fort-sec{
+    display:flex;
+    margin: 4% 12%;
+}
+@media screen  and (max-width:688px){
+    .fort-sec{
+        flex-direction: column;
+        margin: 0%;
+        align-items: center;
+    justify-content: center;
+    }
+    .last-half img{
+        width: 100%;
+    }
+    .last-half{
+        width:100%;
+    }
+}
+.last-half{
+    width: 50%;
+}
+.last-half img{
+    width: 80%;
+}
+.footer{
+
+    background-color: #0A0826;
+    height: 250px;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   margin-top: 20px;
+   padding-top: 30px;
+}
+.footer-div a{
+
+    color: #FFFFFF;
+    padding-left: 15px;
+}
